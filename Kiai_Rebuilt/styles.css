@@ -518,7 +518,19 @@ h1, h2, h3, h4, h5 {
 
 /* Responsive Mobile */
 @media (max-width: 768px) {
-  .app-container { flex-direction: column; }
+  html, body {
+    height: 100% !important;
+    width: 100% !important;
+    position: fixed !important;
+    inset: 0 !important;
+    overflow: hidden !important;
+  }
+  .app-container {
+    height: 100% !important;
+    width: 100% !important;
+    flex-direction: column !important;
+    overflow: hidden !important;
+  }
   
   .glass-nav {
     width: 100%;
@@ -540,17 +552,17 @@ h1, h2, h3, h4, h5 {
   
   .nav-links {
     flex-direction: row;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
+    position: fixed !important;
+    bottom: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
     background: var(--bg-nav-mobile);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
     border-top: 1px solid var(--border-glass);
     padding: 0.45rem 0.5rem env(safe-area-inset-bottom, 10px) 0.5rem;
     justify-content: space-around;
-    z-index: 100;
+    z-index: 999999 !important;
   }
   
   .nav-item {
@@ -561,8 +573,12 @@ h1, h2, h3, h4, h5 {
   .nav-item .label { font-size: 0.7rem; }
   
   .main-content {
+    flex: 1 !important;
+    height: 100% !important;
+    overflow-y: auto !important;
+    -webkit-overflow-scrolling: touch !important;
     padding: 1rem;
-    padding-bottom: calc(90px + env(safe-area-inset-bottom, 10px)); /* Space for bottom nav */
+    padding-bottom: calc(85px + env(safe-area-inset-bottom, 10px)) !important;
   }
   
   .bento-grid { grid-template-columns: 1fr; }
