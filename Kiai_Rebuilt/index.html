@@ -13,10 +13,11 @@
   <link rel="manifest" href="manifest.json">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="theme-color" content="#0a0a0f">
   <link rel="apple-touch-icon" href="icon.png">
   <link rel="icon" href="icon.png">
   
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css?v=5">
 </head>
 <body>
   <!-- Eastern Martial Arts Atmosphere (Subtle Zen Calligraphy Watermark & Dojo Nuances) -->
@@ -97,17 +98,15 @@
     }
 
     @media (max-width: 768px) {
-      [data-theme="dark"] .glass-nav {
-        background: linear-gradient(180deg, rgba(239, 68, 68, 0.24) 0%, rgba(10, 10, 15, 0.75) 100%) !important;
-        border-bottom: 1px solid rgba(239, 68, 68, 0.35) !important;
-        backdrop-filter: blur(20px) !important;
-        -webkit-backdrop-filter: blur(20px) !important;
+      [data-theme="dark"] .glass-nav, [data-theme="light"] .glass-nav {
+        background: transparent !important;
+        border-bottom: none !important;
+        box-shadow: none !important;
+        backdrop-filter: none !important;
+        -webkit-backdrop-filter: none !important;
       }
-      [data-theme="light"] .glass-nav {
-        background: linear-gradient(180deg, rgba(239, 68, 68, 0.16) 0%, rgba(255, 255, 255, 0.85) 100%) !important;
-        border-bottom: 1px solid rgba(220, 38, 38, 0.25) !important;
-        backdrop-filter: blur(20px) !important;
-        -webkit-backdrop-filter: blur(20px) !important;
+      .main-content {
+        padding-top: 0.2rem !important;
       }
     }
   </style>
