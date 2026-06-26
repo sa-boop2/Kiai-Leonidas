@@ -294,6 +294,9 @@ class ModernRoadmapApp {
       icon.textContent = theme === "dark" ? "☀️" : "🌙";
       text.textContent = theme === "dark" ? "Light Mode" : "Dark Mode";
     }
+    document.querySelectorAll(".topThemeIcon").forEach(el => {
+      el.textContent = theme === "dark" ? "☀️" : "🌙";
+    });
   }
 
   setupEventListeners() {

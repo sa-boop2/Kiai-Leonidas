@@ -149,12 +149,12 @@
               <p style="margin: 0; font-size: 0.75rem; color: var(--text-secondary);">Spartan Transformation Roadmap</p>
             </div>
           </div>
-          <div style="display: flex; gap: var(--space-md); align-items: center;">
+          <div style="display: flex; gap: 8px; align-items: center;">
+            <button class="btn btn-glass" style="padding: 10px 14px; border-radius: 12px; cursor: pointer;" onclick="Leonidas.toggleTheme()" title="Toggle Light/Dark Theme">
+              <span style="font-size: 1.25rem;" class="topThemeIcon">☀️</span>
+            </button>
             <button class="btn btn-glass" onclick="Leonidas.openModal('phaseModal')">
               <span>🔄 Switch Focus</span>
-            </button>
-            <button class="btn btn-primary" style="display: none;" id="mobileThemeBtn" onclick="Leonidas.toggleTheme()">
-              <span>🌓 Theme</span>
             </button>
           </div>
         </header>
@@ -345,9 +345,14 @@
             <h1>Master Phase Roadmap</h1>
             <p>Chronological roadmap overview. Compact design fits completely on one screen.</p>
           </div>
-          <button class="btn btn-glass" style="padding: 8px 16px; font-size: 0.85rem;" onclick="Leonidas.resetBaselineData()">
-            <span>🔄 Reset to PDF Baseline</span>
-          </button>
+          <div style="display: flex; gap: 8px; align-items: center;">
+            <button class="btn btn-glass" style="padding: 10px 14px; border-radius: 12px; cursor: pointer;" onclick="Leonidas.toggleTheme()" title="Toggle Light/Dark Theme">
+              <span style="font-size: 1.25rem;" class="topThemeIcon">☀️</span>
+            </button>
+            <button class="btn btn-glass" style="padding: 8px 16px; font-size: 0.85rem;" onclick="Leonidas.resetBaselineData()">
+              <span>🔄 Reset to PDF Baseline</span>
+            </button>
+          </div>
         </header>
 
         <div class="bento-card" style="padding: 0; overflow: hidden; border-radius: var(--radius-md);">
@@ -380,6 +385,9 @@
             <h1>Diagnostic & Rules Engine</h1>
             <p>Evaluate objective physical and visual stop signals to time phase transitions.</p>
           </div>
+          <button class="btn btn-glass" style="padding: 10px 14px; border-radius: 12px; cursor: pointer;" onclick="Leonidas.toggleTheme()" title="Toggle Light/Dark Theme">
+            <span style="font-size: 1.25rem;" class="topThemeIcon">☀️</span>
+          </button>
         </header>
 
         <div class="bento-grid">
@@ -509,6 +517,9 @@
             <h1>Milestones & Progression Ranks</h1>
             <p>Long-term transformation checkpoints and hierarchy ranking overview.</p>
           </div>
+          <button class="btn btn-glass" style="padding: 10px 14px; border-radius: 12px; cursor: pointer;" onclick="Leonidas.toggleTheme()" title="Toggle Light/Dark Theme">
+            <span style="font-size: 1.25rem;" class="topThemeIcon">☀️</span>
+          </button>
         </header>
 
         <!-- Ranks Gallery Display -->

@@ -75,7 +75,7 @@
 
   /* iOS Safe Area & Mobile Layout */
   --safe-top: env(safe-area-inset-top, 0px);
-  --safe-bottom: env(safe-area-inset-bottom, 0px);
+  --safe-bottom: max(env(safe-area-inset-bottom, 0px), 28px);
   --sidebar-width: 270px;
   --bottom-nav-height: calc(70px + var(--safe-bottom));
 }
@@ -764,13 +764,15 @@ input, select, textarea {
   bottom: 0;
   left: 0;
   right: 0;
-  height: var(--bottom-nav-height);
+  height: auto;
+  min-height: calc(65px + var(--safe-bottom));
   background: var(--bg-secondary);
   border-top: 1px solid var(--border-glass);
   z-index: 100;
   justify-content: space-around;
   align-items: center;
-  padding-bottom: var(--safe-bottom);
+  padding-top: 0.65rem;
+  padding-bottom: calc(0.65rem + var(--safe-bottom));
   box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.4);
 }
 
@@ -832,7 +834,7 @@ input, select, textarea {
   .main-viewport {
     padding: var(--space-lg) var(--space-md);
     padding-top: calc(var(--space-lg) + var(--safe-top));
-    padding-bottom: calc(var(--bottom-nav-height) + var(--space-xl));
+    padding-bottom: calc(115px + var(--safe-bottom));
   }
   .phase-hero-title { font-size: 1.85rem; }
   .phase-goal-val { font-size: 1.65rem; }
