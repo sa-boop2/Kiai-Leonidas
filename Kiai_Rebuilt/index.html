@@ -95,6 +95,21 @@
     .ambient-orb {
       filter: blur(80px) saturate(160%) !important;
     }
+
+    @media (max-width: 768px) {
+      [data-theme="dark"] .glass-nav {
+        background: linear-gradient(180deg, rgba(239, 68, 68, 0.24) 0%, rgba(10, 10, 15, 0.75) 100%) !important;
+        border-bottom: 1px solid rgba(239, 68, 68, 0.35) !important;
+        backdrop-filter: blur(20px) !important;
+        -webkit-backdrop-filter: blur(20px) !important;
+      }
+      [data-theme="light"] .glass-nav {
+        background: linear-gradient(180deg, rgba(239, 68, 68, 0.16) 0%, rgba(255, 255, 255, 0.85) 100%) !important;
+        border-bottom: 1px solid rgba(220, 38, 38, 0.25) !important;
+        backdrop-filter: blur(20px) !important;
+        -webkit-backdrop-filter: blur(20px) !important;
+      }
+    }
   </style>
   <!-- Ambient Background Orbs -->
   <div class="ambient-orb orb-1"></div>

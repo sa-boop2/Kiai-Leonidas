@@ -86,8 +86,8 @@ body[data-active-app="leonidas"] .glow-kiai {
 /* Master Viewport Container (3D Stage) */
 .viewports-stage {
   position: relative;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   perspective: 2000px;
   overflow: hidden;
   z-index: 1;

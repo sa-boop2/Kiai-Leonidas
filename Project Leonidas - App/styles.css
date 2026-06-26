@@ -75,9 +75,9 @@
 
   /* iOS Safe Area & Mobile Layout */
   --safe-top: env(safe-area-inset-top, 0px);
-  --safe-bottom: max(env(safe-area-inset-bottom, 0px), 28px);
+  --safe-bottom: env(safe-area-inset-bottom, 10px);
   --sidebar-width: 270px;
-  --bottom-nav-height: calc(70px + var(--safe-bottom));
+  --bottom-nav-height: calc(60px + var(--safe-bottom));
 }
 
 /* --- Clean Crisp Light Mode --- */
@@ -765,14 +765,14 @@ input, select, textarea {
   left: 0;
   right: 0;
   height: auto;
-  min-height: calc(65px + var(--safe-bottom));
+  min-height: calc(52px + var(--safe-bottom));
   background: var(--bg-secondary);
   border-top: 1px solid var(--border-glass);
   z-index: 100;
   justify-content: space-around;
   align-items: center;
-  padding-top: 0.65rem;
-  padding-bottom: calc(0.65rem + var(--safe-bottom));
+  padding-top: 0.5rem;
+  padding-bottom: var(--safe-bottom);
   box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.4);
 }
 
@@ -830,14 +830,29 @@ input, select, textarea {
 
 @media (max-width: 768px) {
   .sidebar { display: none; }
-  .bottom-nav { display: flex; }
+  .bottom-nav { display: flex; backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); background: rgba(18, 20, 26, 0.9); }
+  [data-theme="light"] .bottom-nav { background: rgba(255, 255, 255, 0.9); }
   .main-viewport {
-    padding: var(--space-lg) var(--space-md);
-    padding-top: calc(var(--space-lg) + var(--safe-top));
-    padding-bottom: calc(115px + var(--safe-bottom));
+    padding: 0.85rem 0.75rem;
+    padding-top: calc(0.85rem + var(--safe-top));
+    padding-bottom: calc(80px + var(--safe-bottom));
   }
-  .phase-hero-title { font-size: 1.85rem; }
-  .phase-goal-val { font-size: 1.65rem; }
-  .rank-icon-huge { font-size: 2.5rem; }
-  .modal-content { padding: var(--space-xl) var(--space-lg); }
+  .bento-card, .hero-quote-card, .central-phase-hero, .rank-hero-banner {
+    padding: 1.15rem 1rem !important;
+    border-radius: 14px !important;
+  }
+  h1 { font-size: 1.35rem !important; }
+  h2 { font-size: 1.25rem !important; margin-bottom: 0.75rem !important; }
+  h3 { font-size: 1.1rem !important; }
+  .phase-hero-title { font-size: 1.55rem !important; }
+  .phase-goal-val { font-size: 1.35rem !important; }
+  .stat-val-huge { font-size: 1.7rem !important; }
+  .rank-icon-huge { font-size: 2.1rem !important; }
+  .btn { padding: 0.55rem 0.9rem !important; font-size: 0.82rem !important; }
+  .top-header { margin-bottom: 0.75rem !important; padding-bottom: 0.4rem !important; }
+  table.titan-table th, table.titan-table td { padding: 7px 8px !important; font-size: 0.8rem !important; }
+  .principle-card { padding: 1rem !important; gap: 10px !important; }
+  .principle-card h4 { font-size: 0.95rem !important; }
+  .principle-card p { font-size: 0.82rem !important; }
+  .modal-content { padding: 1.25rem 1rem !important; border-radius: 16px !important; }
 }
