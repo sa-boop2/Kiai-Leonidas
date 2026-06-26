@@ -844,8 +844,10 @@ input, select, textarea {
     overflow: hidden !important;
   }
   .sidebar { display: none !important; }
-  .bottom-nav { display: flex !important; position: fixed !important; bottom: 0 !important; left: 0 !important; right: 0 !important; z-index: 999999 !important; backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); background: rgba(18, 20, 26, 0.95); }
+  .bottom-nav { display: flex !important; position: fixed !important; bottom: 0 !important; left: 0 !important; right: 0 !important; z-index: 999999 !important; backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); background: rgba(18, 20, 26, 0.95); padding: 0.2rem 0.3rem env(safe-area-inset-bottom, 4px) 0.3rem !important; min-height: 44px !important; justify-content: space-around; }
   [data-theme="light"] .bottom-nav { background: rgba(255, 255, 255, 0.95); }
+  .bottom-nav-item { padding: 0.15rem 0.25rem !important; gap: 1px !important; font-size: 0.62rem !important; min-height: 40px !important; }
+  .bottom-nav-item .nav-icon { font-size: 1.05rem !important; }
   .main-viewport {
     flex: 1 !important;
     height: 100% !important;
@@ -853,7 +855,7 @@ input, select, textarea {
     -webkit-overflow-scrolling: touch !important;
     padding: 0.85rem 0.75rem !important;
     padding-top: calc(0.85rem + var(--safe-top)) !important;
-    padding-bottom: calc(85px + env(safe-area-inset-bottom, 10px)) !important;
+    padding-bottom: calc(52px + env(safe-area-inset-bottom, 4px)) !important;
   }
   .bento-card, .hero-quote-card, .central-phase-hero, .rank-hero-banner {
     padding: 1.15rem 1rem !important;
