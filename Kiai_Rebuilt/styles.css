@@ -560,7 +560,7 @@ h1, h2, h3, h4, h5 {
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
     border-top: 1px solid var(--border-glass);
-    padding: 0.2rem 0.3rem env(safe-area-inset-bottom, 4px) 0.3rem !important;
+    padding: 0.2rem 0.3rem env(safe-area-inset-bottom, 2px) 0.3rem !important;
     min-height: 44px !important;
     justify-content: space-around;
     z-index: 999999 !important;
@@ -581,7 +581,7 @@ h1, h2, h3, h4, h5 {
     overflow-y: auto !important;
     -webkit-overflow-scrolling: touch !important;
     padding: 0.85rem !important;
-    padding-bottom: calc(52px + env(safe-area-inset-bottom, 4px)) !important;
+    padding-bottom: calc(48px + env(safe-area-inset-bottom, 2px)) !important;
   }
   
   .bento-grid { grid-template-columns: 1fr; }
