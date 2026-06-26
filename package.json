@@ -1,0 +1,14 @@
+{
+  "name": "kiai-leonidas-unified",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Unified Master Hub for Kiai Martial Arts Prep and Project Leonidas Transformation",
+  "scripts": {
+    "dev": "vite --port 3000 --open",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^5.4.11"
+  }
+}

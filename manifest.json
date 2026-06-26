@@ -1,0 +1,22 @@
+{
+  "name": "Kiai & Leonidas Master Hub",
+  "short_name": "Kiai Hub",
+  "description": "Seamless Master Transformation Hub for Martial Arts Preparation and Titan Physique Transformation.",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#050608",
+  "theme_color": "#050608",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "Kiai_Rebuilt/icon.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "Kiai_Rebuilt/icon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
